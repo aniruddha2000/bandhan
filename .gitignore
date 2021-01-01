@@ -137,3 +137,6 @@ dmypy.json
 
 #python database migrations
 migrations/
+
+node_modules/
+my_secrets/
