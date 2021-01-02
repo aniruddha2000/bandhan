@@ -12,9 +12,10 @@ isort = "*"
 flake8 = "*"
 autopep8 = "*"
 django-cors-headers = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.6"
 
 [scripts]
-server = "python manage.py runserver"
+server = "python backend/manage.py runserver"
