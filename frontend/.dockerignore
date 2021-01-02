@@ -1,0 +1,9 @@
+# vscode
+**/.idea/
+**/.vscode/
+
+**/build/
+.dockerignore
+**/Dockerfile
+README.md
+node_modules/*
