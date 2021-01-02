@@ -1,0 +1,12 @@
+# vscode
+.idea/
+.vscode/
+
+#bash
+.bashrc
+
+#python database migrations
+migrations/
+
+node_modules/
+my_secrets/
