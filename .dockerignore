@@ -1,12 +1,14 @@
 # vscode
-.idea/
-.vscode/
+**/.idea/
+**/.vscode/
 
 #bash
-.bashrc
+**/.bashrc
 
 #python database migrations
-migrations/
+**/migrations
 
-node_modules/
-my_secrets/
+**/node_modules
+**build/
+.dockerignore
+**/Dockerfile

@@ -1,5 +1,4 @@
 # For the backend
-
 FROM python:3.6-alpine
 
 # Set environment variables
@@ -11,7 +10,6 @@ WORKDIR /code
 
 # Copy requirements to the container
 COPY Pipfile Pipfile.lock /code/
-
 
 # Install the requirements to the container
 RUN pip install pipenv && pipenv install --system

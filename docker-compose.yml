@@ -1,7 +1,6 @@
 version: "3"
 services:
-  web:
-    # build: .
+  backend:
     build:
       context: .
       dockerfile: ./backend/Dockerfile
@@ -11,3 +10,13 @@ services:
     command: python /code/manage.py runserver 0.0.0.0:8000
     ports:
       - 8000:8000
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    stdin_open: true
+    ports:
+      - 3000:3000
+    environment:
+      - CHOKIDAR_USEPOLLING=true
